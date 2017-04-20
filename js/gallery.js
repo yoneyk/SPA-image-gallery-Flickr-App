@@ -11,14 +11,14 @@ function clearSearchField() {
 function backToSearch(){
 
   document.getElementById("show_button").style.display = 'none';
-  document.getElementById("gallery-detail").style.display = 'block';
   document.getElementById("detail_button").style.display = 'none';
   document.getElementById("gallery-photo").style.display = 'none';
+  document.getElementById("gallery-detail").style.display = 'block';
+  document.getElementById("zoom-photo").style.display = 'none';
   //document.getElementById("pager").style.display = 'none';
   document.getElementById("selectedImageSection").style.display = 'block';
   document.getElementById("detail").style.display = 'block';
   document.getElementById("selected-photo").style.display = 'none';
-  document.getElementById("zoom-photo").style.display = 'none';
   clearSearchField();
 }
 
@@ -30,10 +30,10 @@ function backToSelectedImage(){
 }
 
 function backToImageList(){
-  document.getElementById("gallery-photo").style.display = 'block';
-  document.getElementById("detail").style.display = 'block';
   document.getElementById("selected-photo").style.display = 'none';
   document.getElementById("selectedImageSection").style.display = 'none';
+  document.getElementById("gallery-photo").style.display = 'block';
+  document.getElementById("detail").style.display = 'block';
 }
 
 function selectImage(){
