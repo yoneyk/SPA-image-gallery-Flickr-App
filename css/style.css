@@ -128,6 +128,13 @@
     display: inline-block;
   }
 
+  #popup_tooltip {
+    display: none;
+  }
+  #gallery-photo:hover #popup_tooltip {
+    display:inline-block;
+  }
+
   /*selected Image*/
   #selectedImageSection {
     padding-top: 3px;

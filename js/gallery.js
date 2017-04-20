@@ -132,9 +132,6 @@ function searchFromFlickr() {
             for(var i = 0; i<photoListElement.length; i++){
               var imgElement = photoListElement[i];
               imgElement.onclick = function(object){
-                //console.log(object);
-                //console.log('chrome check');
-                console.log(object.target.src);
                 var clickedImage = object.target.src;
                 var imgList = document.getElementById("photolist").getElementsByTagName('li');
                 for (var j = 0; j < imgList.length; j++) {
