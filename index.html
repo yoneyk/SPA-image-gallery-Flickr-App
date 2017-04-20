@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yonatan Kebede">
+    <title>Flickr Gallery App | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo_title">
+          <!-- logo here -->
+          <h1> <span class="highlight">Flickr</span> Photo Gallery Test</h1>
+        </div>
+        <nav> <!-- menu navigation -->
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="gallery"> <!-- main section -->
+      <div class="container">
+        <div id="gallery-detail">
+          <h1>Search our photo gallery</h1>
+          <form>
+            <input id= "search_text" type="text" placeholder="Search here...">
+            <button type="button" class="button_large" id="search_button" onclick="searchFromFlickr()">Search</button><!--onclick="searchFromFlickr()"-->
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <div id="show_button">
+          <h1 class="page-title">Photo Gallery</h1>
+          <form>
+            <button type="button" class="button_large" id="back_button" onclick="backToSearch()">Back to Search</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--<button type="button" class="button_large" id="select_image" onclick="selectImage()">Select Images</button>&nbsp;&nbsp;&nbsp;&nbsp;-->
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id = "detail">
+      <div class="container">
+        <div id="detail_button">
+          <form>
+            <div id="innerButton">
+              <!--<button type="button" class="button_large" id="select_all" onclick="selectAllImages()">Select All Images</button>&nbsp;&nbsp;&nbsp;&nbsp;--><!--onclick="selectAllImages()"-->
+              <!--<input type="checkbox" value="Select All" disabled>Select All-->
+              <button type="button" class="button_large" id="view_gallery" >View Gallery</button>
+            </div>
+          </form>
+        </div>
+        <div id="gallery-photo">
+          <ul id="photolist"></ul>
+        </div>
+        <!--<div id="pager">
+          <form>
+            <div id="pagerButton">
+              <button type="button" class="button_medium" id="prev" onclick="previousPage()">Prev</button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" class="button_medium" id="next" onclick="nextPage()">Next</button>
+            </div>
+          </form>
+        </div>-->
+      </div>
+    </section>
+    <section id = "selectedImageSection">
+      <div class="container">
+        <div id="selected-photo">
+          <form>
+            <div id="backButtonId">
+              <button type="button" class="button_medium" id="back" onclick="backToImageList()">Back</button>
+            </div>
+          </form>
+          <ul id="selectedlist"></ul>
+        </div>
+        <div id="zoom-photo">
+          <form>
+            <div id="backButtonId">
+              <button type="button" class="button_medium" id="back" onclick="backToSelectedImage()">Back</button>
+            </div>
+          </form>
+          <div id="zoom-photo1">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Flicker Photo Gallery Test, Copyright &copy; 2017</p>
+    </footer>
+    <script type="text/javascript" src="js/gallery.js"></script>
+  </body>
+</html>
